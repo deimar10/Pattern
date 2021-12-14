@@ -69,6 +69,8 @@ return{
 }
 
 })();
+
+// UI Controller
 const UICtrl = (function(){
         return {
             populateItemList: function(item){
@@ -84,7 +86,7 @@ const UICtrl = (function(){
                     </li>`;
                 })
                 // insert list items
-                document.querySelector("#item-list").innerHTML = html;
+                document.querySelector(UISelectors.itemList).innerHTML = html;
             }
         }
 })();
